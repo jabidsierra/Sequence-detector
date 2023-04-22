@@ -1,0 +1,509 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5880 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 434.262 ; gain = 98.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:46]
+INFO: [Synth 8-3491] module 'rom_mem' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:35' bound to instance 'mem' of component 'rom_mem' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'rom_mem' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'rom_mem' (1#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:40]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Cont_32' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:35' bound to instance 'cont1' of component 'Cont_32' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Cont_32' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Cont_32' (2#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:43]
+INFO: [Synth 8-3491] module 'Detector' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:34' bound to instance 'detect' of component 'Detector' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'Detector' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:43]
+INFO: [Synth 8-3491] module 'Div_frec' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/div.vhd:36' bound to instance 'resetmaq1' of component 'Div_frec' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'Div_frec' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/div.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Div_frec' (3#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/div.vhd:41]
+INFO: [Synth 8-3491] module 'mux_16' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:34' bound to instance 'mux' of component 'mux_16' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'mux_16' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'mux_16' (4#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:55]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'cont_mux' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:35' bound to instance 'conmux' of component 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:43]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'cont_mux' (5#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:43]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:34' bound to instance 'F_S_M' of component 'FSM' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (6#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:41]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'CONTMAQ' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/CONTMAQ.vhd:35' bound to instance 'cont_2' of component 'CONTMAQ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'CONTMAQ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/CONTMAQ.vhd:42]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/CONTMAQ.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'CONTMAQ' (7#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/CONTMAQ.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Detector' (8#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:43]
+INFO: [Synth 8-3491] module 'Unit_control' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:34' bound to instance 'control' of component 'Unit_control' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'Unit_control' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Unit_control' (9#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:39]
+INFO: [Synth 8-3491] module 'RAM2' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/RAM2.vhd:36' bound to instance 'memoria' of component 'RAM2' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'RAM2' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/RAM2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'RAM2' (10#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/RAM2.vhd:47]
+INFO: [Synth 8-3491] module 'Visualiza' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:34' bound to instance 'visualiz' of component 'Visualiza' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'Visualiza' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:44]
+INFO: [Synth 8-3491] module 'Div_100K' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:36' bound to instance 'div100k' of component 'Div_100K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Div_100K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Div_100K' (11#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:41]
+INFO: [Synth 8-3491] module 'Div_200K' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:15' bound to instance 'div200k' of component 'Div_200K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'Div_200K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Div_200K' (12#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:20]
+INFO: [Synth 8-3491] module 'Div_1M' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:15' bound to instance 'div1Mk' of component 'Div_1M' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'Div_1M' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Div_1M' (13#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:20]
+INFO: [Synth 8-3491] module 'mux_4a1' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:34' bound to instance 'mux4a1' of component 'mux_4a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'mux_4a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux_4a1' (14#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:43]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'Cont' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:35' bound to instance 'cont_3' of component 'Cont' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'Cont' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:42]
+	Parameter N bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Cont' (15#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:42]
+INFO: [Synth 8-3491] module 'mux_8a1' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:34' bound to instance 'mux8a1' of component 'mux_8a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mux_8a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mux_8a1' (16#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:47]
+INFO: [Synth 8-3491] module 'Deco3a8' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:34' bound to instance 'DECO_3A8' of component 'Deco3a8' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'Deco3a8' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Deco3a8' (17#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:39]
+INFO: [Synth 8-3491] module 'Deco_hexa' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:34' bound to instance 'DEXOHEX' of component 'Deco_hexa' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'Deco_hexa' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Deco_hexa' (18#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:39]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_univ' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:34' bound to instance 'desplaza' of component 'Reg_univ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'Reg_univ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:43]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Reg_univ' (19#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:43]
+WARNING: [Synth 8-3848] Net Num7 in module/entity Visualiza does not have driver. [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'Visualiza' (20#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:44]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'cont_leer' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_leer.vhd:48' bound to instance 'contadorlectura' of component 'cont_leer' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'cont_leer' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_leer.vhd:56]
+	Parameter N bound to: 6 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_leer.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'cont_leer' (21#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_leer.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'main' (22#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:46]
+WARNING: [Synth 8-3331] design RAM2 has unconnected port rst
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 490.812 ; gain = 154.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 490.812 ; gain = 154.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 490.812 ; gain = 154.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "sQ" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'Y_reg' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:97]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s2 |                              010 |                              010
+                      s3 |                              011 |                              011
+                      s4 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 490.812 ; gain = 154.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	  32 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  22 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rom_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  32 Input     16 Bit        Muxes := 1     
+Module Cont_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Div_frec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module cont_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 2     
+Module CONTMAQ 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Unit_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  22 Input      6 Bit        Muxes := 1     
+Module RAM2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
+Module Div_100K 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Div_200K 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Div_1M 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module mux_4a1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module Cont 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module Deco3a8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module Reg_univ 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module cont_leer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'memoria/dout_reg' and it is trimmed from '4' to '1' bits. [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/RAM2.vhd:58]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cont1/sQ_reg )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'visualiz/desplaza/r_reg_reg[7]/Q' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:51]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:51]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 643.988 ; gain = 308.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------+-----------+----------------------+----------------+
+|main        | memoria/myRam_reg | Implied   | 32 x 1               | RAM32X1S x 1   | 
++------------+-------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 643.988 ; gain = 308.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------+-----------+----------------------+----------------+
+|main        | memoria/myRam_reg | Implied   | 32 x 1               | RAM32X1S x 1   | 
++------------+-------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     7|
+|3     |LUT2     |    11|
+|4     |LUT3     |    13|
+|5     |LUT4     |    18|
+|6     |LUT5     |    17|
+|7     |LUT6     |    29|
+|8     |MUXF7    |     4|
+|9     |MUXF8    |     2|
+|10    |RAM32X1S |     1|
+|11    |FDCE     |    16|
+|12    |FDRE     |    44|
+|13    |LD       |     1|
+|14    |IBUF     |     7|
+|15    |OBUF     |    15|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------+----------+------+
+|      |Instance          |Module    |Cells |
++------+------------------+----------+------+
+|1     |top               |          |   186|
+|2     |  cont1           |Cont_32   |    24|
+|3     |  contadorlectura |cont_leer |    16|
+|4     |  detect          |Detector  |    45|
+|5     |    F_S_M         |FSM       |     9|
+|6     |    conmux        |cont_mux  |    15|
+|7     |    cont_2        |CONTMAQ   |     1|
+|8     |    resetmaq1     |Div_frec  |    20|
+|9     |  memoria         |RAM2      |     2|
+|10    |  visualiz        |Visualiza |    76|
+|11    |    desplaza      |Reg_univ  |     1|
+|12    |    div100k       |Div_100K  |    28|
+|13    |    div1Mk        |Div_1M    |    21|
+|14    |    div200k       |Div_200K  |    26|
++------+------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 644.477 ; gain = 308.570
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 746.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 1 instances
+  RAM32X1S => RAM32X1S (RAMS32): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 9 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 746.195 ; gain = 423.328
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 746.195 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 22 12:33:33 2023...

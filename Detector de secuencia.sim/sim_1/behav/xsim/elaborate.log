@@ -1,0 +1,39 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_frec [div_frec_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTMAQ [contmaq_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM2 [ram2_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_leer [cont_leer_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav

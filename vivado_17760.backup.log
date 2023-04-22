@@ -1,0 +1,2268 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr  9 01:11:24 2021
+# Process ID: 17760
+# Current directory: C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23428 C:\Users\jabid\Documents\Universidad\Tarea\Detector de secuencia\Detector de secuencia.xpr
+# Log file: C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/vivado.log
+# Journal file: C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 733.871 ; gain = 166.066
+update_compile_order -fileset sources_1
+close [ open {C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd} w ]
+add_files {{C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd}}
+update_compile_order -fileset sources_1
+open_project C:/Users/jabid/Documents/Universidad/Tarea/pwm/pwm.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 834.914 ; gain = 38.195
+update_compile_order -fileset sources_1
+current_project {Detector de secuencia}
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+file mkdir C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new
+file mkdir C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new
+file mkdir C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new
+file mkdir C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new
+file mkdir C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new
+file mkdir {C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new}
+close [ open {C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/tb.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/tb.vhd}}
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/tb.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/tb.vhd}}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Apr  9 08:29:37 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1063.852 ; gain = 2.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Apr  9 08:32:16 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Apr  9 08:36:09 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1063.906 ; gain = 0.055
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Apr  9 08:37:34 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1065.426 ; gain = 0.449
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: main
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1158.223 ; gain = 91.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:46]
+INFO: [Synth 8-3491] module 'rom_mem' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:35' bound to instance 'mem' of component 'rom_mem' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'rom_mem' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'rom_mem' (1#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:40]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Cont_32' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:35' bound to instance 'cont1' of component 'Cont_32' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Cont_32' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Cont_32' (2#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:43]
+INFO: [Synth 8-3491] module 'Detector' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:34' bound to instance 'detect' of component 'Detector' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Detector' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:43]
+INFO: [Synth 8-3491] module 'mux_16' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:34' bound to instance 'mux' of component 'mux_16' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'mux_16' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'mux_16' (3#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:55]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'cont_mux' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:35' bound to instance 'conmux' of component 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:43]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'cont_mux' (4#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:43]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:34' bound to instance 'F_S_M' of component 'FSM' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (5#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:41]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'cont_mux' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:35' bound to instance 'cont_2' of component 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:85]
+WARNING: [Synth 8-3848] Net Q11 in module/entity Detector does not have driver. [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'Detector' (6#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:43]
+INFO: [Synth 8-3491] module 'Unit_control' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:34' bound to instance 'control' of component 'Unit_control' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'Unit_control' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Unit_control' (7#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:49]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/.Xil/Vivado-17760-LAPTOP-C3UDKJFQ/realtime/blk_mem_gen_0_stub.v:6' bound to instance 'men2' of component 'blk_mem_gen_0' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:125]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/.Xil/Vivado-17760-LAPTOP-C3UDKJFQ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (8#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/.Xil/Vivado-17760-LAPTOP-C3UDKJFQ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-3491] module 'Visualiza' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:34' bound to instance 'visualiz' of component 'Visualiza' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'Visualiza' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:44]
+INFO: [Synth 8-3491] module 'Div_100K' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:36' bound to instance 'div100k' of component 'Div_100K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Div_100K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Div_100K' (9#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:41]
+INFO: [Synth 8-3491] module 'Div_200K' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:15' bound to instance 'div200k' of component 'Div_200K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'Div_200K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Div_200K' (10#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:20]
+INFO: [Synth 8-3491] module 'Div_1M' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:15' bound to instance 'div1Mk' of component 'Div_1M' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'Div_1M' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Div_1M' (11#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:20]
+INFO: [Synth 8-3491] module 'mux_4a1' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:34' bound to instance 'mux4a1' of component 'mux_4a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'mux_4a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux_4a1' (12#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:43]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'Cont' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:35' bound to instance 'cont_3' of component 'Cont' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'Cont' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:42]
+	Parameter N bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Cont' (13#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:42]
+INFO: [Synth 8-3491] module 'mux_8a1' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:34' bound to instance 'mux8a1' of component 'mux_8a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mux_8a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mux_8a1' (14#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:47]
+INFO: [Synth 8-3491] module 'Deco3a8' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:34' bound to instance 'DECO_3A8' of component 'Deco3a8' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'Deco3a8' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Deco3a8' (15#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:39]
+INFO: [Synth 8-3491] module 'Deco_hexa' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:34' bound to instance 'DEXOHEX' of component 'Deco_hexa' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'Deco_hexa' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Deco_hexa' (16#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:39]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_univ' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:34' bound to instance 'desplaza' of component 'Reg_univ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'Reg_univ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:43]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Reg_univ' (17#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:43]
+WARNING: [Synth 8-3848] Net Num7 in module/entity Visualiza does not have driver. [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'Visualiza' (18#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:44]
+WARNING: [Synth 8-3848] Net CUP in module/entity main does not have driver. [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'main' (19#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:46]
+WARNING: [Synth 8-3331] design Unit_control has unconnected port detec_32
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1201.750 ; gain = 135.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin cont_2:ARst to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:85]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[3] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[2] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[1] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[0] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+WARNING: [Synth 8-3295] tying undriven pin detect:Cup to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:123]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1201.750 ; gain = 135.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1201.750 ; gain = 135.070
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'men2'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1307.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1403.063 ; gain = 336.383
+65 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1403.063 ; gain = 337.508
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/t_b.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/t_b.vhd}}
+update_compile_order -fileset sim_1
+current_project pwm
+current_project {Detector de secuencia}
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cont'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cont_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Div_100K'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Div_1M'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Div_200K'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Deco3a8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Deco_hexa'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Detector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rom_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Reg_univ'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Unit_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Visualiza'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_mux'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_4a1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_8a1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 1403.063 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '21' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 16 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1403.063 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 1404.293 ; gain = 1.230
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rom_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/t_b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_b'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 17 elements ; expected 16 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1986.781 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rom_mem'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:59]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1986.781 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_16'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jabid/Documents/Universidad/Tarea/Detector -notrace
+couldn't read file "C:/Users/jabid/Documents/Universidad/Tarea/Detector": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr  9 09:05:03 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1986.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1986.781 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/t_b/UTT/men2}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1986.781 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1986.781 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1986.781 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/t_b/UTT/detect}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1986.781 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1986.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1986.781 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1986.781 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/t_b/UTT/control}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1986.781 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/t_b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_b'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1986.781 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/t_b/UTT/men2}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/t_b/UTT/detect}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1986.781 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/t_b/UTT/cont1}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/t_b/UTT/detect/conmux}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/t_b/UTT/detect/F_S_M}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/t_b/UTT/detect/mux}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1986.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1986.781 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Detector'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1986.781 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/t_b/UTT/detect}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1992.309 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/t_b/UTT/detect/F_S_M}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1992.309 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1992.309 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 1992.309 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cont_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_mux'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1992.309 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 1992.309 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/t_b/UTT/detect/mux}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1992.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:46]
+INFO: [Synth 8-3491] module 'rom_mem' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:35' bound to instance 'mem' of component 'rom_mem' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'rom_mem' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'rom_mem' (1#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd:40]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Cont_32' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:35' bound to instance 'cont1' of component 'Cont_32' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Cont_32' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Cont_32' (2#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Cont_32.vhd:43]
+INFO: [Synth 8-3491] module 'Detector' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:34' bound to instance 'detect' of component 'Detector' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Detector' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:43]
+INFO: [Synth 8-3491] module 'mux_16' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:34' bound to instance 'mux' of component 'mux_16' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'mux_16' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'mux_16' (3#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/mux_16.vhd:55]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'cont_mux' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:35' bound to instance 'conmux' of component 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:43]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'cont_mux' (4#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:43]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:34' bound to instance 'F_S_M' of component 'FSM' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (5#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/FMS.vhd:41]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'cont_mux' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/cont_mux.vhd:35' bound to instance 'cont_2' of component 'cont_mux' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:85]
+WARNING: [Synth 8-3848] Net Q11 in module/entity Detector does not have driver. [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'Detector' (6#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:43]
+INFO: [Synth 8-3491] module 'Unit_control' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:34' bound to instance 'control' of component 'Unit_control' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'Unit_control' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Unit_control' (7#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:49]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/.Xil/Vivado-17760-LAPTOP-C3UDKJFQ/realtime/blk_mem_gen_0_stub.v:6' bound to instance 'men2' of component 'blk_mem_gen_0' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:125]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/.Xil/Vivado-17760-LAPTOP-C3UDKJFQ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (8#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/.Xil/Vivado-17760-LAPTOP-C3UDKJFQ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-3491] module 'Visualiza' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:34' bound to instance 'visualiz' of component 'Visualiza' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'Visualiza' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:44]
+INFO: [Synth 8-3491] module 'Div_100K' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:36' bound to instance 'div100k' of component 'Div_100K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Div_100K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Div_100K' (9#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd:41]
+INFO: [Synth 8-3491] module 'Div_200K' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:15' bound to instance 'div200k' of component 'Div_200K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'Div_200K' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Div_200K' (10#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd:20]
+INFO: [Synth 8-3491] module 'Div_1M' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:15' bound to instance 'div1Mk' of component 'Div_1M' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'Div_1M' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Div_1M' (11#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd:20]
+INFO: [Synth 8-3491] module 'mux_4a1' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:34' bound to instance 'mux4a1' of component 'mux_4a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'mux_4a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux_4a1' (12#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd:43]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'Cont' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:35' bound to instance 'cont_3' of component 'Cont' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'Cont' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:42]
+	Parameter N bound to: 3 - type: integer 
+WARNING: [Synth 8-614] signal 'Cup' is read in the process but is not in the sensitivity list [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Cont' (13#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd:42]
+INFO: [Synth 8-3491] module 'mux_8a1' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:34' bound to instance 'mux8a1' of component 'mux_8a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mux_8a1' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mux_8a1' (14#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd:47]
+INFO: [Synth 8-3491] module 'Deco3a8' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:34' bound to instance 'DECO_3A8' of component 'Deco3a8' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'Deco3a8' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Deco3a8' (15#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd:39]
+INFO: [Synth 8-3491] module 'Deco_hexa' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:34' bound to instance 'DEXOHEX' of component 'Deco_hexa' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'Deco_hexa' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Deco_hexa' (16#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd:39]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Reg_univ' declared at 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:34' bound to instance 'desplaza' of component 'Reg_univ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'Reg_univ' [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:43]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Reg_univ' (17#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd:43]
+WARNING: [Synth 8-3848] Net Num7 in module/entity Visualiza does not have driver. [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'Visualiza' (18#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'main' (19#1) [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:46]
+WARNING: [Synth 8-3331] design Unit_control has unconnected port detec_32
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2025.789 ; gain = 33.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin cont_2:ARst to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd:85]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[3] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[2] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[1] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+WARNING: [Synth 8-3295] tying undriven pin mux8a1:I6[0] to constant 0 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd:130]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2025.789 ; gain = 33.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2025.789 ; gain = 33.480
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'men2'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2328.910 ; gain = 336.602
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/t_b/UTT/mem}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2328.910 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 2328.910 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2328.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2328.910 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/t_b/UTT/control}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj t_b_vlog.prj"
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Block Memory Generator module t_b.UTT.men2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2328.910 ; gain = 0.000
+create_project RAM C:/Users/jabid/Documents/Universidad/Tarea/RAM -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:31 . Memory (MB): peak = 2328.910 ; gain = 0.000
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project {Detector de secuencia}
+current_project RAM
+file mkdir C:/Users/jabid/Documents/Universidad/Tarea/RAM/RAM.srcs/sources_1/new
+close [ open C:/Users/jabid/Documents/Universidad/Tarea/RAM/RAM.srcs/sources_1/new/RAM.vhd w ]
+add_files C:/Users/jabid/Documents/Universidad/Tarea/RAM/RAM.srcs/sources_1/new/RAM.vhd
+update_compile_order -fileset sources_1
+current_project {Detector de secuencia}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+current_project RAM
+current_project {Detector de secuencia}
+current_project RAM
+close_project
+current_project {Detector de secuencia}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/jabid/Documents/Universidad/Tarea/RAM/RAM.srcs/sources_1/new/RAM.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/imports/new/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Unit_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 4 elements ; formal 'din' expects 16 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:117]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit t_b in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 2328.910 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/imports/new/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 8 elements ; formal 'dout' expects 4 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd:117]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit t_b in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2328.910 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2328.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/t_b/UTT/men2}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/t_b/UTT/cont1}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2328.910 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/t_b/UTT/control}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2328.910 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/t_b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_b'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2328.910 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/t_b/UTT/detect}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/t_b/UTT/cont1}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2328.910 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Detector'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 2328.910 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 2328.910 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 2328.910 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2328.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_b_behav -key {Behavioral:sim_1:Functional:t_b} -tclbatch {t_b.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source t_b.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_b_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2328.910 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/t_b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_b'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2328.910 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 2328.910 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sim_1/new/t_b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_b'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.rom_mem [rom_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont_32 [cont_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_16 [mux_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.cont_mux [cont_mux_default]
+Compiling architecture multi_seg_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.Detector [detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.Unit_control [unit_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_100K [div_100k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_200K [div_200k_default]
+Compiling architecture behavioral of entity xil_defaultlib.Div_1M [div_1m_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_4a1 [mux_4a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cont [cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux_8a1 [mux_8a1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco3a8 [deco3a8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Deco_hexa [deco_hexa_default]
+Compiling architecture arch of entity xil_defaultlib.Reg_univ [reg_univ_default]
+Compiling architecture behavioral of entity xil_defaultlib.Visualiza [visualiza_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_b
+Built simulation snapshot t_b_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/t_b/UTT/detect/conmux}} 
+current_wave_config {Untitled 8}
+Untitled 8
+add_wave {{/t_b/UTT/detect/cont_2}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2328.910 ; gain = 0.000
+current_project pwm
+current_project {Detector de secuencia}
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Detector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Unit_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2328.910 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 6 elements ; expected 7 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:44]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit t_b in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 't_b' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_b_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Unit_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cd80e467562e413085e652c3baebe945 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot t_b_behav xil_defaultlib.t_b -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 6 elements ; expected 7 [C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.srcs/sources_1/new/Unit_control.vhd:44]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit t_b in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jabid/Documents/Universidad/Tarea/Detector de secuencia/Detector de secuencia.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse C:/Users/jabid/Documents/Universidad/Tarea/RAM/RAM.srcs/sources_1/new/RAM.vhd
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force C:/Users/jabid/Documents/Universidad/Tarea/RAM/RAM.srcs/sources_1/new/RAM.vhd
+update_compile_order -fileset sim_1
+close_project
+close_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 2328.910 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  9 20:10:55 2021...

@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/Cont.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/Cont_32.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/DIV_100K.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/DIV_1M.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/DIV_200K.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/Deco_3a8.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/Deco_hexa.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/Detector.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/FMS.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/Memoria_32x16.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/Reg_univ.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/Unit_control.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/Visualiza.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/cont_mux.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/mux_16.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/mux_4a1.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/imports/new/mux_8a1.vhd" \
+"../../../../Detector de secuencia.srcs/sources_1/new/main.vhd" \
+
+# Do not sort compile order
+nosort
